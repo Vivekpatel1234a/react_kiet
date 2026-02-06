@@ -1,23 +1,30 @@
 import './App.css'
-// import './components/App.css/     . means current me hai aur uske andar hai compnents uske andr hai app
-/*export default*/ function App() {
-  
+import Header from './components/tele.jsx'
+import Registration from './components/Registration.jsx'
+import Footer from './components/Footer.jsx'
 
-  return (    /*return ek hi thing return krta hai so we merge them into div */
-  <div>
-    <h1>Hello Kiet</h1>
-    <h2>
-      HEllo Bachho
-    </h2>
-  </div>
+function App() {
+   const y=[2025,2027,2028,2029]
+   const c={name:"kiet",location:"Ghaziabad",estdyear:1998};
+  return (
+    <>
+      <Header title="My first React App" />
+      <Header title="Lets Explore FSD" />
+
+      <main>
+       
+        <Registration />
+      </main>
+
+     <Footer
+  year={y[3]}
+  company="Xebia Organisation"
+  college={c}
+/>
+
+      
+    </>
   )
 }
 
 export default App
-
-
-/**
- react works on component programming
- */
-
-

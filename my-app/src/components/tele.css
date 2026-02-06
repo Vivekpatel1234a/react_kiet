@@ -1,0 +1,20 @@
+header {
+  background-color: #b0e7e5;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+}
+
+nav a {
+    background-color: aqua;
+  margin-right: 15px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #00eaff;
+}
+body{
+    background-color: antiquewhite;
+}
