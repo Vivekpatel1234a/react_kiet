@@ -1,4 +1,4 @@
-import { Wrapper } from "./components/Wrapper";
+/*import { Wrapper } from "./components/Wrapper";
 import { UserCard } from "./components/UserCard";
 
 export default function App() {
@@ -35,3 +35,4 @@ export default function App() {
     </div>
   );
 }
+*/

@@ -1,36 +1,54 @@
-import './App.css'
-import Header from './components/tele.jsx'
-import Registration from './components/Registration.jsx'
-import Footer from './components/Footer.jsx'
-
+//import EventToDo from "./EventToDo";
+import EventToDoSearch from "./EventToDoSearch"
 function App() {
-  const y = [2025, 2027, 2028, 2029]
-  const c = { name: "KIET", location: "Ghaziabad", estdyear: 1998 }
-
   return (
-    <>
-      <Header title="My first React App" color="red">
-        <h4>This is children demo</h4>
-        <p>This demo talks about passing children</p>
-        <p>Thanks for reading</p>
-      </Header>
-
-      <Header title="Lets Explore FSD" color="blue" />
-
-      <main>
-        <Registration />
-      </main>
-
-      <Footer
-        year={y[3]}
-        company="Xebia Organisation"
-        college={c}
-      />
-    </>
-  )
+    <div>
+      <EventToDoSearch />
+    </div>
+  );
 }
 
-export default App
+export default App;
+
+
+
+
+
+
+
+// import './App.css'
+// import Header from './components/tele.jsx'
+// import Registration from './components/Registration.jsx'
+// import Footer from './components/Footer.jsx'
+
+// function App() {
+//   const y = [2025, 2027, 2028, 2029]
+//   const c = { name: "KIET", location: "Ghaziabad", estdyear: 1998 }
+
+//   return (
+//     <>
+//       <Header title="My first React App" color="red">
+//         <h4>This is children demo</h4>
+//         <p>This demo talks about passing children</p>
+//         <p>Thanks for reading</p>
+//       </Header>
+
+//       <Header title="Lets Explore FSD" color="blue" />
+
+//       <main>
+//         <Registration />
+//       </main>
+
+//       <Footer
+//         year={y[3]}
+//         company="Xebia Organisation"
+//         college={c}
+//       />
+//     </>
+//   )
+// }
+
+// export default App
 
 
 

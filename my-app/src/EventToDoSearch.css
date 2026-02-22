@@ -1,0 +1,35 @@
+.search-container {
+  width: 300px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+.search-title {
+  text-align: center;
+  color: #333;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+.search-list {
+  list-style: none;
+  padding: 0;
+}
+
+.search-item {
+  padding: 6px 10px;
+  margin-bottom: 4px;
+  background-color: #f3f4f6;
+  border-radius: 4px;
+}
