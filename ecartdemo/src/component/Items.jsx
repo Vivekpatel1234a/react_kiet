@@ -3,12 +3,13 @@ return(
     <div className="Itemdiv">
 {/*array so bcz of that map works */}
         {totalitem.map(item => 
-        <div  className="totalitemcl">
+        <div  className="totalitemcl" style={{textAlign:"center"}}>
          <img
          src={item.image}
          ></img>   
-        <p >{item.name}</p>
-        <p>{item.price}</p>
+        <p style={{textAlign:"center"}}>{item.name}</p>
+        <p style={{textAlign:"center"}}>{item.price}</p>
+        <button>Remove</button>
         
         </div>
         )}

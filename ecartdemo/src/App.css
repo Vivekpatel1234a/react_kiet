@@ -7,6 +7,9 @@
     padding: 23px;
     text-align: center;
     font-size: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .productcartcss{
@@ -60,4 +63,13 @@ body{
     background-color: rgb(236, 237, 237);
     padding: 10px;
     overflow-x: auto;
+}
+.header>img{
+width: 75px;
+height: 75px;
+}
+.header>input{
+    padding: 8px 12px;
+    font-size: 16px;
+    width: 300px;
 }

@@ -7,6 +7,8 @@ import Items from './component/Items.jsx'
 function App() {
   const [cart,setCart]=useState([]);
   const [totalAmount,setAmount]=useState(0);
+  const [searchText,setSearchText]=useState("");
+
   const product = [ //array ke andr object 
     {
       id:1,
@@ -38,10 +40,21 @@ function App() {
   //  setCart(updateCart);
  // }
   //const totalAmount=cart.reduce(((total,index)=>total+index.price,0));
+
+
+
+   const filteredProducts = product.filter((item) =>
+  item.name.toLowerCase().includes(searchText.toLowerCase())
+);
   return (
     <div>
-      <Header cartCount={cart.length}/>
-      <ProductList  products={product} addToCart={addToCart} setAmount={setAmount} cart={cart}/>
+      <Header cartCount={cart.length} setSearchText={setSearchText} />
+      <ProductList
+  products={filteredProducts}
+  addToCart={addToCart}
+  setAmount={setAmount}
+  cart={cart}
+/>
       <Cart totAmt={totalAmount}/>
      <p className="cart-title">Items In The Cart:</p>
       <Items totalitem={cart}/>
