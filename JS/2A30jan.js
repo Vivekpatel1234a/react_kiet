@@ -5,6 +5,8 @@
     }
 }*/
 
+import { useEffect } from "react";
+
 // by array  in same line 
 /*
 let arr=[1,2,3,4,5,6,7,8,9,10];
@@ -114,7 +116,7 @@ function greet(name){
 }
 
 */
-
+/*
 const factorial=function(n){
     if(n==0 || n==1) return 1;
     else{
@@ -142,3 +144,39 @@ npx create-react-app myapp
 2. faster and lighter
 npm create vite@latest myapp
 */
+
+
+let promise=new Promise((resolve,reject)=>{
+    let success=true;
+   if(success) resolve("Accepted");
+   else reject("Rejected");
+})
+
+//consuming promise
+// promise.then((message)=>{
+//     console.log(message);
+// }).catch((error)=>{
+//     console.log(error);
+// })
+
+
+
+///////////FETCH/////////////////////
+fetch('https://jsonplaceholder.typicode.com/users')
+.then((response)=>{
+    return response.json();
+})
+.then((newres)=>{
+    let newobj={};
+ newres.map(element => {
+     console.log(element.id+" -> "+ element.name);
+     newobj[element.id]=element.name;
+       
+    });
+    return newobj;
+})
+.then((ele)=>{
+    console.log(ele);
+})
+.catch()
+
