@@ -1,14 +1,14 @@
-import React from 'react'
-import AppR from './Component/Routing/AppR';
-import AppRed from './Component/Redux.jsx/App'
-//import AppR from './Component/PaginationA/AppR';
+import React from 'react';
+import { Provider } from 'react-redux';
+import { store } from './Component/Redux/store';
+import Todo from './Component/Redux/todo';
+
 function App() {
   return (
-    <div>
-        <AppRed/>
-        {/* <News/> */}
-    </div>
-  )
+    <Provider store={store}>
+      <Todo />
+    </Provider>
+  );
 }
 
 export default App;
